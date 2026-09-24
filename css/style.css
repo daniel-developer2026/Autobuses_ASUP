@@ -1,0 +1,3003 @@
+/* =========================================================
+   ASUP - AUTOTRANSPORTES SOCIOS UNIDOS POBLANOS
+   STYLE.CSS COMPLETO
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --pink: #e91e63;
+    --pink-dark: #c2185b;
+    --pink-light: #fce4ec;
+
+    --black: #121820;
+    --text: #374151;
+    --gray: #718096;
+
+    --white: #ffffff;
+
+    --bg-light: #f7f9fc;
+
+    --border: #e9edf2;
+
+    --radius: 20px;
+
+    --shadow:
+        0 12px 35px rgba(0, 0, 0, .08);
+
+    --shadow-hover:
+        0 20px 45px rgba(233, 30, 99, .16);
+
+    --container: 1250px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+
+    font-family:
+        'Poppins',
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text);
+
+    background: #ffffff;
+
+    overflow-x: hidden;
+
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.container {
+
+    width:
+        min(
+            var(--container),
+            calc(100% - 40px)
+        );
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding:
+        13px 26px;
+
+    border-radius: 50px;
+
+    border:
+        2px solid transparent;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.button:hover {
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* BOTÓN ROSA */
+
+.button.primary {
+
+    color: #ffffff;
+
+    background:
+        var(--pink);
+
+    box-shadow:
+        0 8px 22px
+        rgba(233, 30, 99, .25);
+}
+
+.button.primary:hover {
+
+    background:
+        var(--pink-dark);
+
+    box-shadow:
+        0 12px 28px
+        rgba(233, 30, 99, .32);
+}
+
+
+/* BOTÓN NEGRO */
+
+.button.outline-black {
+
+    color:
+        var(--black);
+
+    background:
+        rgba(255,255,255,.75);
+
+    border-color:
+        var(--black);
+}
+
+.button.outline-black:hover {
+
+    color: #ffffff;
+
+    background:
+        var(--black);
+}
+
+
+/* BOTÓN ROSA OUTLINE */
+
+.button.outline-pink {
+
+    width: 100%;
+
+    color:
+        var(--pink);
+
+    background:
+        #ffffff;
+
+    border-color:
+        var(--pink);
+}
+
+.button.outline-pink:hover {
+
+    color: #ffffff;
+
+    background:
+        var(--pink);
+}
+
+
+/* WHATSAPP */
+
+.button.outline-whatsapp {
+
+    color:
+        #1da851;
+
+    background:
+        #ffffff;
+
+    border-color:
+        #1da851;
+}
+
+.button.outline-whatsapp:hover {
+
+    color: #ffffff;
+
+    background:
+        #1da851;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+        rgba(255,255,255,.96);
+
+    border-bottom:
+        1px solid
+        rgba(0,0,0,.05);
+
+    backdrop-filter:
+        blur(14px);
+
+    -webkit-backdrop-filter:
+        blur(14px);
+
+    transition:
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* HEADER AL HACER SCROLL */
+
+.header.scrolled {
+
+    background:
+        rgba(255,255,255,.92);
+
+    box-shadow:
+        0 8px 30px
+        rgba(0,0,0,.10);
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+    min-height:
+        85px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.05;
+}
+
+.logo-text strong {
+
+    color:
+        var(--pink);
+
+    font-size:
+        2.15rem;
+
+    font-weight:
+        900;
+
+    font-style:
+        italic;
+
+    letter-spacing:
+        -1px;
+}
+
+.logo-text small {
+
+    margin-top:
+        4px;
+
+    color:
+        var(--gray);
+
+    font-size:
+        .55rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        .03em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* =========================================================
+   NAVEGACIÓN
+========================================================= */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+}
+
+.navigation a {
+
+    position: relative;
+
+    padding:
+        30px 0;
+
+    color:
+        var(--text);
+
+    font-size:
+        .9rem;
+
+    font-weight:
+        500;
+
+    transition:
+        color .3s ease;
+}
+
+.navigation a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 22px;
+
+    width: 0;
+    height: 3px;
+
+    border-radius:
+        10px;
+
+    background:
+        var(--pink);
+
+    transition:
+        width .3s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+
+    color:
+        var(--pink);
+}
+
+.navigation a:hover::after,
+.navigation a.active::after {
+
+    width:
+        100%;
+}
+
+
+/* =========================================================
+   BOTÓN HEADER
+========================================================= */
+
+.header-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding:
+        12px 23px;
+
+    color:
+        #ffffff;
+
+    background:
+        var(--pink);
+
+    border-radius:
+        50px;
+
+    font-size:
+        .85rem;
+
+    font-weight:
+        600;
+
+    box-shadow:
+        0 7px 20px
+        rgba(233,30,99,.25);
+
+    transition:
+        transform .3s ease,
+        background .3s ease;
+}
+
+.header-button:hover {
+
+    background:
+        var(--pink-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   MENÚ HAMBURGUESA
+========================================================= */
+
+.menu-button {
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 7px;
+
+    background:
+        transparent;
+
+    border: 0;
+
+    border-radius:
+        10px;
+}
+
+.menu-button span {
+
+    display: block;
+
+    width: 28px;
+    height: 3px;
+
+    background:
+        var(--black);
+
+    border-radius:
+        10px;
+
+    transition:
+        transform .3s ease;
+}
+
+
+/* =========================================================
+   HERO / PORTADA
+========================================================= */
+
+.hero {
+
+    position: relative;
+
+    min-height:
+        calc(100vh - 85px);
+
+    margin-top:
+        85px;
+
+    overflow: hidden;
+
+    isolation:
+        isolate;
+
+    /*
+       IMAGEN COMPLETA DE PORTADA
+    */
+
+    background-image:
+        url("../images/autobus_portada.png");
+
+    background-repeat:
+        no-repeat;
+
+    background-size:
+        cover;
+
+    background-position:
+        center center;
+}
+
+
+/*
+   DEGRADADO DEL LADO IZQUIERDO
+
+   Permite que el texto se vea
+   sin ocultar el autobús.
+*/
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events:
+        none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.97) 0%,
+            rgba(255,255,255,.90) 24%,
+            rgba(255,255,255,.60) 38%,
+            rgba(255,255,255,.15) 58%,
+            rgba(255,255,255,0) 76%
+        );
+}
+
+
+/* CONTENEDOR HERO */
+
+.hero-container {
+
+    position: relative;
+
+    z-index: 5;
+
+    min-height:
+        calc(100vh - 85px);
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* TEXTO HERO */
+
+.hero-content {
+
+    width:
+        47%;
+
+    padding:
+        60px 0;
+}
+
+
+/* ETIQUETA */
+
+.section-label {
+
+    display: block;
+
+    margin-bottom:
+        14px;
+
+    color:
+        var(--pink);
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .12em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* TÍTULO */
+
+.hero h1 {
+
+    color:
+        var(--black);
+
+    font-size:
+        clamp(
+            3.5rem,
+            6vw,
+            5.8rem
+        );
+
+    line-height:
+        .94;
+
+    letter-spacing:
+        -2px;
+}
+
+.hero h1 span {
+
+    display:
+        block;
+
+    color:
+        var(--pink);
+
+    font-size:
+        clamp(
+            4rem,
+            7vw,
+            6.5rem
+        );
+}
+
+
+/* SUBTÍTULO */
+
+.hero-subtitle {
+
+    max-width:
+        500px;
+
+    margin-top:
+        24px;
+
+    color:
+        var(--gray);
+
+    font-size:
+        clamp(
+            1rem,
+            1.7vw,
+            1.25rem
+        );
+}
+
+
+/* =========================================================
+   BENEFICIOS
+========================================================= */
+
+.benefits {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        22px;
+
+    margin-top:
+        30px;
+}
+
+.benefit {
+
+    display: flex;
+
+    align-items: center;
+
+    gap:
+        7px;
+
+    color:
+        var(--pink);
+
+    font-size:
+        .88rem;
+
+    font-weight:
+        600;
+}
+
+.benefit p {
+
+    color:
+        var(--black);
+}
+
+
+/* =========================================================
+   BOTONES HERO
+========================================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        13px;
+
+    margin-top:
+        32px;
+}
+
+
+/*
+   La imagen ya funciona como background.
+   Ocultamos el <img> original del HTML.
+*/
+
+.hero-bus {
+
+    display:
+        none;
+}
+
+.bus-portada {
+
+    display:
+        none;
+}
+
+.hero-message {
+
+    display:
+        none;
+}
+
+
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
+
+.section {
+
+    padding:
+        100px 0;
+}
+
+
+/* =========================================================
+   RUTAS
+========================================================= */
+
+.routes {
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+}
+
+
+/* GRID */
+
+.routes-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        30px;
+
+    margin-top:
+        40px;
+}
+
+
+/* TARJETA */
+
+.route-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.route-card:hover {
+
+    transform:
+        translateY(-9px);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+
+/* =========================================================
+   IMAGEN DE RUTA
+========================================================= */
+
+.route-image {
+
+    width:
+        100%;
+
+    height:
+        240px;
+
+    overflow:
+        hidden;
+
+    background:
+        #f4f4f4;
+}
+
+.route-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    max-width:
+        none;
+
+    object-fit:
+        cover;
+
+    object-position:
+        center;
+
+    transition:
+        transform .6s ease;
+}
+
+.route-card:hover
+.route-image img {
+
+    transform:
+        scale(1.06);
+}
+
+
+/* =========================================================
+   INFORMACIÓN DE RUTA
+========================================================= */
+
+.route-info {
+
+    flex:
+        1;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    padding:
+        25px;
+}
+
+.route-info h3 {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    margin-bottom:
+        10px;
+
+    color:
+        var(--black);
+
+    font-size:
+        1.35rem;
+}
+
+.route-icon {
+
+    color:
+        var(--pink);
+}
+
+.route-info p {
+
+    flex:
+        1;
+
+    margin-bottom:
+        22px;
+
+    color:
+        var(--gray);
+
+    font-size:
+        .9rem;
+}
+
+
+/* =========================================================
+   HORARIOS
+========================================================= */
+
+.schedule {
+
+    background:
+        var(--bg-light);
+}
+
+
+/* TÍTULO */
+
+.section-title {
+
+    margin-bottom:
+        40px;
+}
+
+.section-title h2 {
+
+    color:
+        var(--black);
+
+    font-size:
+        clamp(
+            2.4rem,
+            4vw,
+            3.5rem
+        );
+
+    line-height:
+        1.1;
+}
+
+.section-title h2 strong {
+
+    color:
+        var(--pink);
+}
+
+.section-title p {
+
+    margin-top:
+        10px;
+
+    color:
+        var(--gray);
+}
+
+
+/* GRID */
+
+.schedule-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        30px;
+
+    margin-bottom:
+        45px;
+}
+
+
+/* TARJETA */
+
+.schedule-card {
+
+    padding:
+        35px;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.schedule-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+
+/* CABECERA */
+
+.schedule-header {
+
+    margin-bottom:
+        25px;
+}
+
+.schedule-header h3 {
+
+    color:
+        var(--black);
+
+    font-size:
+        1.65rem;
+}
+
+.schedule-header p {
+
+    margin-top:
+        5px;
+
+    color:
+        var(--gray);
+}
+
+
+/* HORARIOS */
+
+.times {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap:
+        10px;
+
+    margin-bottom:
+        25px;
+}
+
+.times span {
+
+    padding:
+        10px 5px;
+
+    color:
+        var(--pink-dark);
+
+    background:
+        var(--pink-light);
+
+    border-radius:
+        9px;
+
+    text-align:
+        center;
+
+    font-size:
+        .85rem;
+
+    font-weight:
+        700;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+.times span:hover {
+
+    color:
+        #ffffff;
+
+    background:
+        var(--pink);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* MENSAJE HORARIO */
+
+.schedule-message {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        15px;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+.schedule-message strong {
+
+    color:
+        var(--black);
+}
+
+.schedule-message p {
+
+    margin-top:
+        5px;
+
+    color:
+        var(--gray);
+
+    font-size:
+        .85rem;
+}
+
+
+/* =========================================================
+   ESTADÍSTICAS
+========================================================= */
+
+.statistics {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        20px;
+
+    padding:
+        30px;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius);
+
+    box-shadow:
+        var(--shadow);
+}
+
+.statistics div {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+}
+
+.statistics i {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    flex-shrink:
+        0;
+
+    color:
+        var(--pink);
+
+    background:
+        var(--pink-light);
+
+    border-radius:
+        14px;
+
+    font-size:
+        1.45rem;
+}
+
+.statistics strong {
+
+    color:
+        var(--black);
+
+    font-size:
+        .88rem;
+}
+
+
+/* =========================================================
+   VILLA JUÁREZ
+========================================================= */
+
+.villa {
+
+    position:
+        relative;
+
+    min-height:
+        520px;
+
+    padding:
+        0;
+
+    overflow:
+        hidden;
+
+    isolation:
+        isolate;
+
+    /*
+       BANNER COMPLETO
+    */
+
+    background-image:
+        url("../images/autobus_villajuarez.png");
+
+    background-repeat:
+        no-repeat;
+
+    background-size:
+        cover;
+
+    background-position:
+        center center;
+}
+
+
+/*
+   DEGRADADO
+
+   Mantiene el texto legible
+   en la parte izquierda.
+*/
+
+.villa::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    z-index:
+        1;
+
+    pointer-events:
+        none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(75,0,42,.76) 0%,
+            rgba(90,0,50,.55) 25%,
+            rgba(110,0,60,.25) 45%,
+            rgba(120,0,70,.06) 65%,
+            rgba(120,0,70,0) 100%
+        );
+}
+
+
+/* CONTENEDOR */
+
+.villa-container {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    min-height:
+        520px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        flex-start;
+}
+
+
+/* TEXTO */
+
+.villa-content {
+
+    width:
+        45%;
+
+    padding:
+        60px 0;
+
+    text-align:
+        left;
+}
+
+.villa-content h2 {
+
+    color:
+        #ffffff;
+
+    font-size:
+        clamp(
+            3rem,
+            5vw,
+            5rem
+        );
+
+    line-height:
+        .95;
+}
+
+.villa-content h2 strong {
+
+    color:
+        #ffffff;
+}
+
+.villa-content p {
+
+    max-width:
+        500px;
+
+    margin:
+        20px 0 30px;
+
+    color:
+        rgba(255,255,255,.92);
+
+    line-height:
+        1.7;
+}
+
+
+/*
+   Ocultamos la imagen <img>
+   porque ahora el banner es background.
+*/
+
+.villa-bus {
+
+    display:
+        none;
+}
+
+.villa-bus img {
+
+    display:
+        none;
+}
+
+
+/* =========================================================
+   NOSOTROS
+========================================================= */
+
+.about {
+
+    background:
+        #ffffff;
+}
+
+.about-container {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items:
+        center;
+
+    gap:
+        70px;
+}
+
+.about-content h2 {
+
+    margin-bottom:
+        25px;
+
+    color:
+        var(--black);
+
+    font-size:
+        clamp(
+            2.5rem,
+            4vw,
+            3.5rem
+        );
+
+    line-height:
+        1.1;
+}
+
+.about-content h2 strong {
+
+    color:
+        var(--pink);
+}
+
+.about-content p {
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--text);
+
+    line-height:
+        1.8;
+}
+
+
+/* =========================================================
+   COMPROMISOS
+========================================================= */
+
+.commitments {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        20px;
+}
+
+.commitment {
+
+    padding:
+        30px;
+
+    text-align:
+        center;
+
+    background:
+        var(--bg-light);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.commitment:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+.commitment i {
+
+    display:
+        block;
+
+    margin-bottom:
+        15px;
+
+    color:
+        var(--pink);
+
+    font-size:
+        2.2rem;
+}
+
+.commitment strong {
+
+    color:
+        var(--black);
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contact {
+
+    position:
+        relative;
+
+    min-height:
+        560px;
+
+    padding:
+        0;
+
+    overflow:
+        hidden;
+
+    isolation:
+        isolate;
+
+    /*
+       BANNER COMPLETO
+    */
+
+    background-image:
+        url("../images/autobus_TienesDuda.png");
+
+    background-repeat:
+        no-repeat;
+
+    background-size:
+        cover;
+
+    background-position:
+        center center;
+}
+
+
+/*
+   CAPA BLANCA
+
+   Deja la parte izquierda
+   limpia para el texto.
+*/
+
+.contact::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    z-index:
+        1;
+
+    pointer-events:
+        none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.98) 0%,
+            rgba(255,255,255,.91) 25%,
+            rgba(255,255,255,.62) 42%,
+            rgba(255,255,255,.18) 62%,
+            rgba(255,255,255,0) 100%
+        );
+}
+
+
+/* CONTENEDOR */
+
+.contact-container {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    min-height:
+        560px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        flex-start;
+}
+
+
+/* CONTENIDO */
+
+.contact-content {
+
+    width:
+        45%;
+
+    padding:
+        60px 0;
+
+    text-align:
+        left;
+}
+
+.contact-content h2 {
+
+    color:
+        var(--black);
+
+    font-size:
+        clamp(
+            2.5rem,
+            4vw,
+            3.5rem
+        );
+
+    line-height:
+        1.05;
+}
+
+.contact-content h2 strong {
+
+    color:
+        var(--pink);
+}
+
+.contact-content p {
+
+    max-width:
+        550px;
+
+    margin:
+        20px 0 30px;
+
+    color:
+        var(--text);
+
+    font-size:
+        1rem;
+}
+
+
+/* BOTONES CONTACTO */
+
+.contact-buttons {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+}
+
+
+/*
+   Ocultamos el autobús <img>
+   porque el banner completo
+   está como background.
+*/
+
+.contact-bus {
+
+    display:
+        none;
+}
+
+.contact-bus img {
+
+    display:
+        none;
+}
+
+.contact-message {
+
+    display:
+        none;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    padding:
+        65px 0 25px;
+
+    color:
+        #ffffff;
+
+    background:
+        #121820;
+}
+
+
+/* PARTE SUPERIOR */
+
+.footer-top {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        35px;
+
+    padding-bottom:
+        35px;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.10);
+}
+
+
+/* LOGO FOOTER */
+
+.footer-top .logo-text strong {
+
+    color:
+        var(--pink);
+}
+
+.footer-top .logo-text small {
+
+    color:
+        #9ca3af;
+}
+
+
+/* LINKS FOOTER */
+
+.footer-top nav {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        25px;
+}
+
+.footer-top nav a {
+
+    color:
+        #a0aec0;
+
+    font-size:
+        .85rem;
+
+    transition:
+        color .3s ease;
+}
+
+.footer-top nav a:hover {
+
+    color:
+        var(--pink);
+}
+
+
+/* =========================================================
+   REDES SOCIALES
+========================================================= */
+
+.socials {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+}
+
+.socials a {
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    color:
+        #ffffff;
+
+    border:
+        1px solid
+        #4a5568;
+
+    border-radius:
+        50%;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.socials a:hover {
+
+    background:
+        var(--pink);
+
+    border-color:
+        var(--pink);
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* =========================================================
+   FOOTER INFERIOR
+========================================================= */
+
+.footer-bottom {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+    padding-top:
+        25px;
+
+    color:
+        #718096;
+
+    font-size:
+        .75rem;
+}
+
+
+/* =========================================================
+   BOTÓN VOLVER ARRIBA
+========================================================= */
+
+.back-top {
+
+    position:
+        fixed;
+
+    right:
+        25px;
+
+    bottom:
+        25px;
+
+    z-index:
+        999;
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    color:
+        #ffffff;
+
+    background:
+        var(--pink);
+
+    border:
+        0;
+
+    border-radius:
+        50%;
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    transform:
+        translateY(20px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(233,30,99,.30);
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease,
+        transform .3s ease,
+        background .3s ease;
+}
+
+.back-top:hover {
+
+    background:
+        var(--pink-dark);
+
+    transform:
+        translateY(-3px);
+}
+
+.back-top.show {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   ANIMACIONES REVEAL
+========================================================= */
+
+.reveal {
+
+    opacity:
+        0;
+
+    transform:
+        translateY(55px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.65,.3,1);
+}
+
+.reveal.visible {
+
+    opacity:
+        1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   ANIMACIONES ESCALONADAS
+========================================================= */
+
+.routes-grid
+.route-card:nth-child(1) {
+
+    transition-delay:
+        .05s;
+}
+
+.routes-grid
+.route-card:nth-child(2) {
+
+    transition-delay:
+        .15s;
+}
+
+.routes-grid
+.route-card:nth-child(3) {
+
+    transition-delay:
+        .25s;
+}
+
+
+.schedule-grid
+.schedule-card:nth-child(1) {
+
+    transition-delay:
+        .05s;
+}
+
+.schedule-grid
+.schedule-card:nth-child(2) {
+
+    transition-delay:
+        .15s;
+}
+
+
+.commitments
+.commitment:nth-child(1) {
+
+    transition-delay:
+        .05s;
+}
+
+.commitments
+.commitment:nth-child(2) {
+
+    transition-delay:
+        .12s;
+}
+
+.commitments
+.commitment:nth-child(3) {
+
+    transition-delay:
+        .19s;
+}
+
+.commitments
+.commitment:nth-child(4) {
+
+    transition-delay:
+        .26s;
+}
+
+
+/* =========================================================
+   TABLET GRANDE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .navigation {
+
+        gap:
+            20px;
+    }
+
+    .hero {
+
+        min-height:
+            720px;
+
+        background-position:
+            62% center;
+    }
+
+    .hero-container {
+
+        min-height:
+            635px;
+    }
+
+    .hero-content {
+
+        width:
+            50%;
+    }
+
+
+    /* RUTAS */
+
+    .routes-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .route-card:last-child {
+
+        grid-column:
+            1 / -1;
+
+        width:
+            50%;
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+    }
+
+
+    /* ESTADÍSTICAS */
+
+    .statistics {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* VILLA */
+
+    .villa {
+
+        min-height:
+            500px;
+
+        background-position:
+            60% center;
+    }
+
+    .villa-container {
+
+        min-height:
+            500px;
+    }
+
+    .villa-content {
+
+        width:
+            50%;
+    }
+
+
+    /* CONTACTO */
+
+    .contact {
+
+        min-height:
+            520px;
+
+        background-position:
+            62% center;
+    }
+
+    .contact-container {
+
+        min-height:
+            520px;
+    }
+
+    .contact-content {
+
+        width:
+            50%;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* CONTENEDOR */
+
+    .container {
+
+        width:
+            calc(100% - 30px);
+    }
+
+
+    /* HEADER */
+
+    .navbar {
+
+        min-height:
+            70px;
+    }
+
+
+    /* LOGO */
+
+    .logo-text strong {
+
+        font-size:
+            1.9rem;
+    }
+
+
+    /* MENU */
+
+    .menu-button {
+
+        display:
+            flex;
+    }
+
+    .header-button {
+
+        display:
+            none;
+    }
+
+    .navigation {
+
+        position:
+            absolute;
+
+        top:
+            70px;
+
+        left:
+            15px;
+
+        right:
+            15px;
+
+        width:
+            auto;
+
+        display:
+            none;
+
+        flex-direction:
+            column;
+
+        gap:
+            0;
+
+        padding:
+            10px 0;
+
+        background:
+            #ffffff;
+
+        border:
+            1px solid
+            var(--border);
+
+        border-radius:
+            15px;
+
+        box-shadow:
+            0 15px 40px
+            rgba(0,0,0,.15);
+    }
+
+    .navigation.open {
+
+        display:
+            flex;
+    }
+
+    .navigation a {
+
+        width:
+            100%;
+
+        padding:
+            14px 20px;
+
+        text-align:
+            center;
+    }
+
+    .navigation a::after {
+
+        display:
+            none;
+    }
+
+
+    /* =====================================================
+       HERO MOBILE
+    ===================================================== */
+
+    .hero {
+
+        min-height:
+            720px;
+
+        margin-top:
+            70px;
+
+        background-position:
+            65% center;
+
+        background-size:
+            cover;
+    }
+
+    .hero::before {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255,255,255,.97) 0%,
+                rgba(255,255,255,.91) 28%,
+                rgba(255,255,255,.55) 47%,
+                rgba(255,255,255,.10) 70%,
+                rgba(255,255,255,0) 100%
+            );
+    }
+
+    .hero-container {
+
+        min-height:
+            650px;
+
+        align-items:
+            flex-start;
+    }
+
+    .hero-content {
+
+        width:
+            100%;
+
+        padding:
+            45px 0 0;
+
+        text-align:
+            center;
+    }
+
+    .hero h1 {
+
+        font-size:
+            clamp(
+                3rem,
+                13vw,
+                4.5rem
+            );
+    }
+
+    .hero h1 span {
+
+        font-size:
+            clamp(
+                3.5rem,
+                15vw,
+                5rem
+            );
+    }
+
+    .hero-subtitle {
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+
+        font-size:
+            1.05rem;
+    }
+
+
+    /* BENEFICIOS */
+
+    .benefits {
+
+        justify-content:
+            center;
+
+        gap:
+            14px;
+    }
+
+
+    /* BOTONES */
+
+    .hero-buttons {
+
+        justify-content:
+            center;
+    }
+
+
+    /* RUTAS */
+
+    .routes-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .route-card:last-child {
+
+        grid-column:
+            auto;
+
+        width:
+            100%;
+    }
+
+    .route-image {
+
+        height:
+            250px;
+    }
+
+
+    /* HORARIOS */
+
+    .schedule-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            25px;
+    }
+
+    .schedule-card {
+
+        padding:
+            25px;
+    }
+
+
+    /* HORARIOS */
+
+    .times {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    /* ESTADÍSTICAS */
+
+    .statistics {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        padding:
+            25px 15px;
+    }
+
+    .statistics div {
+
+        justify-content:
+            center;
+
+        text-align:
+            center;
+    }
+
+
+    /* =====================================================
+       VILLA MOBILE
+    ===================================================== */
+
+    .villa {
+
+        min-height:
+            650px;
+
+        background-position:
+            68% center;
+    }
+
+    .villa::before {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(75,0,42,.82) 0%,
+                rgba(85,0,47,.62) 42%,
+                rgba(90,0,50,.25) 72%,
+                rgba(90,0,50,.08) 100%
+            );
+    }
+
+    .villa-container {
+
+        min-height:
+            650px;
+
+        display:
+            flex;
+
+        align-items:
+            flex-start;
+
+        justify-content:
+            center;
+    }
+
+    .villa-content {
+
+        width:
+            100%;
+
+        padding:
+            65px 0 0;
+
+        text-align:
+            center;
+    }
+
+    .villa-content p {
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+    }
+
+
+    /* =====================================================
+       NOSOTROS MOBILE
+    ===================================================== */
+
+    .about-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            45px;
+
+        text-align:
+            center;
+    }
+
+
+    /* COMPROMISOS */
+
+    .commitments {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* =====================================================
+       CONTACTO MOBILE
+    ===================================================== */
+
+    .contact {
+
+        min-height:
+            700px;
+
+        background-position:
+            70% center;
+    }
+
+    .contact::before {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255,255,255,.98) 0%,
+                rgba(255,255,255,.91) 35%,
+                rgba(255,255,255,.52) 57%,
+                rgba(255,255,255,.08) 100%
+            );
+    }
+
+    .contact-container {
+
+        min-height:
+            700px;
+
+        display:
+            flex;
+
+        align-items:
+            flex-start;
+
+        justify-content:
+            center;
+    }
+
+    .contact-content {
+
+        width:
+            100%;
+
+        padding:
+            60px 0 0;
+
+        text-align:
+            center;
+    }
+
+    .contact-content p {
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+    }
+
+    .contact-buttons {
+
+        justify-content:
+            center;
+    }
+
+
+    /* FOOTER */
+
+    .footer-top {
+
+        flex-direction:
+            column;
+
+        text-align:
+            center;
+    }
+
+    .footer-top nav {
+
+        justify-content:
+            center;
+    }
+
+    .footer-bottom {
+
+        flex-direction:
+            column;
+
+        justify-content:
+            center;
+
+        text-align:
+            center;
+    }
+}
+
+
+/* =========================================================
+   CELULAR PEQUEÑO
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* LOGO */
+
+    .logo-text strong {
+
+        font-size:
+            1.75rem;
+    }
+
+    .logo-text small {
+
+        display:
+            none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height:
+            650px;
+
+        background-position:
+            67% center;
+    }
+
+    .hero-content {
+
+        padding-top:
+            40px;
+    }
+
+
+    /* BOTONES */
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+    }
+
+    .hero-buttons .button {
+
+        width:
+            100%;
+    }
+
+
+    /* RUTAS */
+
+    .route-image {
+
+        height:
+            220px;
+    }
+
+
+    /* HORARIOS */
+
+    .times {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* ESTADÍSTICAS */
+
+    .statistics {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .statistics div {
+
+        width:
+            100%;
+
+        justify-content:
+            flex-start;
+
+        text-align:
+            left;
+    }
+
+
+    /* COMPROMISOS */
+
+    .commitments {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* =====================================================
+       VILLA PEQUEÑO
+    ===================================================== */
+
+    .villa {
+
+        min-height:
+            620px;
+
+        background-position:
+            70% center;
+    }
+
+    .villa-container {
+
+        min-height:
+            620px;
+    }
+
+    .villa-content {
+
+        padding-top:
+            55px;
+    }
+
+    .villa-content h2 {
+
+        font-size:
+            clamp(
+                3rem,
+                14vw,
+                4rem
+            );
+    }
+
+
+    /* =====================================================
+       CONTACTO PEQUEÑO
+    ===================================================== */
+
+    .contact {
+
+        min-height:
+            680px;
+
+        background-position:
+            72% center;
+    }
+
+    .contact-container {
+
+        min-height:
+            680px;
+    }
+
+    .contact-content {
+
+        padding-top:
+            50px;
+    }
+
+    .contact-content h2 {
+
+        font-size:
+            clamp(
+                2.3rem,
+                11vw,
+                3rem
+            );
+    }
+
+    .contact-buttons {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+    }
+
+    .contact-buttons .button {
+
+        width:
+            100%;
+    }
+
+
+    /* BOTÓN ARRIBA */
+
+    .back-top {
+
+        right:
+            15px;
+
+        bottom:
+            15px;
+
+        width:
+            46px;
+
+        height:
+            46px;
+    }
+}
+
+
+/* =========================================================
+   REDUCCIÓN DE MOVIMIENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior:
+            auto;
+    }
+
+    .reveal {
+
+        opacity:
+            1;
+
+        transform:
+            none;
+
+        transition:
+            none;
+    }
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            .01ms !important;
+
+        transition-duration:
+            .01ms !important;
+    }
+}

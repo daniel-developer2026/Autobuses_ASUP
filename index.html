@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ASUP - Autotransportes Socios Unidos Poblanos. Horarios, rutas y destinos hacia Zacatlán, Huauchinango y próximamente Villa Juárez.">
+    <meta name="theme-color" content="#e91e83">
+
+    <title>ASUP | Tu camino, nuestro compromiso</title>
+
+    <!-- Fuentes de Google: Poppins para texto general, Caveat para letra cursiva -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+<header class="header" id="header">
+    <div class="container navbar">
+        <a href="#inicio" class="logo" aria-label="ASUP - Inicio">
+            <div class="logo-text">
+                <strong>ASUP</strong>
+                <small>Autotransportes<br>Socios Unidos Poblanos</small>
+            </div>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation" id="navigation" aria-label="Navegación principal">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#rutas">Rutas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#horarios" class="header-button">
+            <i class="fa-solid fa-location-dot"></i> Ver horarios
+        </a>
+    </div>
+</header>
+
+<!-- =====================================================
+     CONTENIDO PRINCIPAL
+===================================================== -->
+<main>
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+    <section class="hero" id="inicio">
+        <div class="container hero-container">
+            
+            <div class="hero-content reveal">
+                <span class="section-label">AUTOTRANSPORTES SOCIOS UNIDOS POBLANOS</span>
+                
+                <h1>Viaja con<br><span>ASUP</span></h1>
+                
+                <p class="hero-subtitle">Tu camino, nuestro compromiso.</p>
+                
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Seguro</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Puntual</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fa-solid fa-users"></i>
+                        <p>Confiable</p>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#horarios" class="button primary">
+                        <i class="fa-regular fa-clock"></i> Consultar horarios
+                    </a>
+                    <a href="#rutas" class="button outline-black">
+                        Conoce nuestras rutas <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-bus reveal">
+                <img src="images/autobus_portada.png" alt="Autobús ASUP en carretera" class="bus-portada" loading="eager" fetchpriority="high">
+                <div class="hero-message" aria-hidden="true">
+                    "Más que un viaje,<br>una conexión con tu destino"
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         RUTAS
+    ===================================================== -->
+    <section class="routes section" id="rutas">
+        <div class="container">
+            <div class="routes-grid">
+
+                <!-- Zacatlán -->
+                <article class="route-card reveal">
+                    <div class="route-image">
+                        <img src="images/autobus_portada.png" alt="Autobús ASUP con destino a Zacatlán" loading="lazy">
+                    </div>
+                    <div class="route-info">
+                        <h3><i class="fa-solid fa-location-dot route-icon"></i> Zacatlán</h3>
+                        <p>Consulta nuestros horarios de salida y punto de abordaje.</p>
+                        <a href="#horarios" class="button outline-pink">
+                            <i class="fa-regular fa-clock"></i> Ver horarios
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Huauchinango -->
+                <article class="route-card reveal">
+                    <div class="route-image">
+                        <img src="images/autobus_TienesDuda.png" alt="Autobús ASUP con destino a Huauchinango" loading="lazy">
+                    </div>
+                    <div class="route-info">
+                        <h3><i class="fa-solid fa-location-dot route-icon"></i> Huauchinango</h3>
+                        <p>Consulta nuestros horarios de salida y punto de abordaje.</p>
+                        <a href="#horarios" class="button outline-pink">
+                            <i class="fa-regular fa-clock"></i> Ver horarios
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Villa Juárez -->
+                <article class="route-card reveal">
+                    <div class="route-image">
+                        <img src="images/autobus_villajuarez.png" alt="Autobús ASUP con destino a Villa Juárez" loading="lazy">
+                    </div>
+                    <div class="route-info">
+                        <h3><i class="fa-solid fa-location-dot route-icon"></i> Villa Juárez</h3>
+                        <p>Muy pronto estaremos ampliando nuestro servicio.</p>
+                        <a href="#villa-juarez" class="button outline-pink">
+                            Conocer más
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         HORARIOS
+    ===================================================== -->
+    <section class="schedule section" id="horarios">
+        <div class="container">
+            
+            <div class="section-title centered reveal">
+                <span>PLANIFICA TU VIAJE</span>
+                <h2>Horarios de <strong>salida</strong></h2>
+                <p>Consulta nuestras principales salidas por la mañana.</p>
+            </div>
+
+            <div class="schedule-grid">
+                
+                <!-- Zacatlán -->
+                <article class="schedule-card reveal">
+                    <div class="schedule-header">
+                        <h3><i class="fa-solid fa-location-dot route-icon"></i> Zacatlán</h3>
+                        <p><i class="fa-regular fa-sun" style="color:#f39c12"></i> Salidas por la mañana</p>
+                    </div>
+                    <div class="times">
+                        <span>5:00</span>
+                        <span>6:00</span>
+                        <span>6:30</span>
+                        <span>7:00</span>
+                        <span>7:30</span>
+                        <span>8:00</span>
+                        <span>8:30</span>
+                        <span>9:00</span>
+                        <span>9:30</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="schedule-message">
+                        <i class="fa-regular fa-clock" style="font-size:1.5rem; color:var(--pink);"></i>
+                        <div>
+                            <strong>A partir de las 10:00 a. m.</strong>
+                            <p>Las unidades estarán realizando sus salidas aproximadamente <b>cada 30 a 40 minutos.</b></p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Huauchinango -->
+                <article class="schedule-card reveal">
+                    <div class="schedule-header">
+                        <h3><i class="fa-solid fa-location-dot route-icon"></i> Huauchinango</h3>
+                        <p><i class="fa-regular fa-sun" style="color:#f39c12"></i> Salidas por la mañana</p>
+                    </div>
+                    <div class="times">
+                        <span>5:00</span>
+                        <span>6:00</span>
+                        <span>6:30</span>
+                        <span>7:00</span>
+                        <span>7:30</span>
+                        <span>8:00</span>
+                        <span>8:30</span>
+                        <span>9:00</span>
+                        <span>9:30</span>
+                        <span>10:00</span>
+                    </div>
+                    <div class="schedule-message">
+                        <i class="fa-regular fa-clock" style="font-size:1.5rem; color:var(--pink);"></i>
+                        <div>
+                            <strong>A partir de las 10:00 a. m.</strong>
+                            <p>Las unidades estarán realizando sus salidas aproximadamente <b>cada 30 a 40 minutos.</b></p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- ESTADÍSTICAS BARRAS -->
+            <div class="statistics reveal">
+                <div>
+                    <i class="fa-solid fa-bus"></i>
+                    <strong>Unidades<br>modernas</strong>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <strong>Miles de pasajeros<br>cada año</strong>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <strong>Viajes seguros<br>y confiables</strong>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong>Conectando<br>más comunidades</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         VILLA JUÁREZ
+    ===================================================== -->
+    <section class="villa" id="villa-juarez">
+        <div class="container villa-container">
+            
+            <div class="villa-content reveal">
+                <span class="section-label" style="color:#fff;">PRÓXIMAMENTE</span>
+                <h2>Villa <strong>Juárez</strong></h2>
+                <p>ASUP continúa creciendo y próximamente estaremos extendiendo nuestro servicio hasta Villa Juárez.</p>
+                <a href="#contacto" class="button primary" style="background:#fff; color:var(--pink);">
+                    <i class="fa-regular fa-bell"></i> Mantente informado
+                </a>
+            </div>
+
+            <div class="villa-bus reveal">
+                <img src="images/autobus_villajuarez.png" alt="Autobús ASUP con destino a Villa Juárez" loading="lazy">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         NOSOTROS
+    ===================================================== -->
+    <section class="about section" id="nosotros">
+        <div class="container about-container">
+            
+            <div class="about-content reveal">
+                <span class="section-label">QUIÉNES SOMOS</span>
+                <h2>Sobre <strong>ASUP</strong></h2>
+                
+                <p><b>Autotransportes Socios Unidos Poblanos (ASUP)</b> brinda servicio de transporte para conectar diferentes localidades de la región. Nuestro compromiso es ofrecer a los pasajeros información clara, un servicio puntual y una experiencia de viaje segura y confiable.</p>
+                
+                <a href="#contacto" class="button outline-pink" style="width: auto;">
+                    Conoce más sobre nosotros <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="commitments reveal">
+                <div class="commitment">
+                    <i class="fa-solid fa-users"></i>
+                    <strong>Atención al usuario</strong>
+                </div>
+                <div class="commitment">
+                    <i class="fa-solid fa-steering-wheel"></i>
+                    <strong>Conductores capacitados</strong>
+                </div>
+                <div class="commitment">
+                    <i class="fa-solid fa-wrench"></i>
+                    <strong>Mantenimiento constante</strong>
+                </div>
+                <div class="commitment">
+                    <i class="fa-solid fa-leaf"></i>
+                    <strong>Compromiso con la región</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACTO
+    ===================================================== -->
+    <section class="contact section" id="contacto">
+        <div class="container contact-container">
+            
+            <div class="contact-content reveal">
+                <h2>¿Tienes alguna <strong>duda?</strong></h2>
+                <p>Comunícate con ASUP para obtener más información sobre nuestros horarios, rutas o cualquier consulta.</p>
+                
+                <div class="contact-buttons">
+                    <a href="tel:+52223596070" class="button primary">
+                        <i class="fa-solid fa-phone"></i> 22 3596 6070
+                    </a>
+                    <a href="https://wa.me/52223596070" target="_blank" rel="noopener noreferrer" class="button outline-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Enviar WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-bus reveal">
+                <img src="images/autobus_TienesDuda.png" alt="Autobús ASUP de frente" loading="lazy">
+                <div class="contact-message" aria-hidden="true">
+                    "Tu destino<br>comienza aquí"
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="footer">
+    <div class="container footer-top">
+        
+        <a href="#inicio" class="logo-text" aria-label="ASUP - Inicio" style="color: #fff;">
+            <strong>ASUP</strong>
+            <small style="color: #ccc;">Autotransportes Socios Unidos Poblanos</small>
+        </a>
+
+        <nav aria-label="Navegación del pie de página">
+            <a href="#inicio">Inicio</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#rutas">Rutas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="socials">
+            <span>Síguenos</span>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 ASUP S.A. DE C.V. | Todos los derechos reservados.</span>
+        <span>Tu camino, nuestro compromiso.</span>
+    </div>
+</footer>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<button class="back-top" id="backTop" aria-label="Volver arriba" type="button">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
